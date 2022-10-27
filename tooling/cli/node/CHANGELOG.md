@@ -1,5 +1,14 @@
 # Changelog
 
+## \[1.1.2]
+
+- Detect JSON5 and TOML configuration files in the dev watcher.
+  - [e7ccbd85](https://www.github.com/tauri-apps/tauri/commit/e7ccbd8573f6b9124e80c0b67fa2365729c3c196) feat(cli): detect JSON5 and TOML configuration files in the dev watcher ([#5439](https://www.github.com/tauri-apps/tauri/pull/5439)) on 2022-10-19
+- Log dev watcher file change detection.
+  - [9076d5d2](https://www.github.com/tauri-apps/tauri/commit/9076d5d2e76d432aef475ba403e9ab5bd3b9d2b0) feat(cli): add prompt information when file changing detected, closes [#5417](https://www.github.com/tauri-apps/tauri/pull/5417) ([#5428](https://www.github.com/tauri-apps/tauri/pull/5428)) on 2022-10-19
+- Fix crash when nodejs binary has the version in its name, for example `node18` or when running through deno.
+  - [7a231cd1](https://www.github.com/tauri-apps/tauri/commit/7a231cd1c99101f63354b13bb36223568d2f0a11) fix(cli): detect deno ([#5475](https://www.github.com/tauri-apps/tauri/pull/5475)) on 2022-10-28
+
 ## \[1.1.1]
 
 - Fix wrong cli metadata that caused new projects (created through `tauri init`) fail to build
